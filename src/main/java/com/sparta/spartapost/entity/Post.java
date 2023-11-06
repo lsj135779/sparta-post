@@ -11,7 +11,7 @@ import lombok.Setter;
 @Setter
 @Table(name = "post")
 @NoArgsConstructor
-public class Post {
+public class Post extends Timestamped {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

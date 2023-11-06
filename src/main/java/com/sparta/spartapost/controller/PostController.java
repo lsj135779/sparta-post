@@ -5,9 +5,12 @@ import com.sparta.spartapost.dto.PostResponseDto;
 import com.sparta.spartapost.service.PostService;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
+@RestController
 @RequestMapping("/api")
 public class PostController {
-    private PostService postService;
+    private final PostService postService;
 
     public PostController(PostService postService) {
         this.postService = postService;
@@ -27,7 +30,7 @@ public class PostController {
 
     // get 메소드 ("/api/posts") 모든 게시글 조회
     @GetMapping("/posts")
-    public PostResponseDto getPosts() {
+    public List<PostResponseDto> getPosts() {
         return postService.getPosts();
     }
 
