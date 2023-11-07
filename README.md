@@ -42,5 +42,6 @@
 https://documenter.getpostman.com/view/16386856/2s9YXfa34x#b1970f0c-e12e-4e3c-be9a-8edb01d93f51
 
 ## ERD 작성
-![Post Diagram](https://github.com/lsj135779/sparta-post/assets/78033706/87188036-ee7f-4d8a-b7d9-5d9d7e2110a7)
+![Post Diagram](https://github.com/lsj135779/sparta-post/assets/78033706/64c6f67c-e05b-4197-9229-01cb1b86a858)
+
 <br/>테이블 분리는 아직 미적용
