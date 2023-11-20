@@ -44,4 +44,23 @@ https://documenter.getpostman.com/view/16386856/2s9YXfa34x#b1970f0c-e12e-4e3c-be
 ## ERD 작성
 ![Post Diagram](https://github.com/lsj135779/sparta-post/assets/78033706/64c6f67c-e05b-4197-9229-01cb1b86a858)
 
-<br/>테이블 분리는 아직 미적용
+<br/>테이블 분리는 아직 미적용   
+
+
+## 피드백
+1. API 명세서의 퀄리티 너무 좋습니다.
+ERD, Use Case Diagram 까지 깔끔합니다.
+
+2. RESTful한 API설계에 대한 이해가 있으신듯 합니다. Contoller 부분 코드는
+전체적으로 깔끔합니다.
+
+3. Service 로직에 Post post = findMemo(id); 라는 메소드명이 복붙하셨는지..!
+이름 확인은 필수입니다 ㅎㅎ 
+
+4. Service 로직에서 적절한 Exception을 사용하시면 됩니다.
+ResponstDto에 Message를 담는것이 아닙니다.
+
+5. ResponseEntity에 대해서 알아보시면 응답 메세지와 응답코드, 응답 데이터가 어떻게 전달되는지 알수 있습니다.
+
+6. Service Layer에서 모든 응답이 PostResponseDto인것은 왜그런걸까요??
+잘 분리하여 꼭 필요한 응답만 return 해주는것이 좋습니다.
